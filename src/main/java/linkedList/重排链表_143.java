@@ -1,6 +1,8 @@
 package linkedList;
 
 
+import java.util.LinkedList;
+
 /**
  * 给定一个单链表 L：L0→L1→…→Ln-1→Ln ，
  * 将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…
@@ -17,45 +19,28 @@ package linkedList;
 public class 重排链表_143 {
 
     /**
-     * 解法思路: 做成一个环形, 头尾相连刚好满足 1 + n-1 的需求
+     * 执行用时 : 582 ms, 在Reorder List的Java提交中击败了7.23% 的用户
+     * 内存消耗 : 46 MB, 在Reorder List的Java提交中击败了44.41% 的用户
      * @param head
      */
     public static void reorderList(ListNode head) {
-        ListNode ret = new ListNode(0);
-        ret.next = head;
         ListNode cur = head;
-        ListNode cur1 = head;
 
-        DoubleNode first = new DoubleNode(0);
-        DoubleNode doubleCur = first;
-        DoubleNode doubleEnd = null;
-
-        int count = 0;
+        LinkedList<ListNode> list = new LinkedList<ListNode>();
         while (cur != null) {
-            count++;
-            DoubleNode one = new DoubleNode(cur.val);
-            doubleCur.next = one;
-            one.pre = doubleCur;
-            if (cur.next == null)
-                doubleEnd = one;
+            list.add(cur);
             cur = cur.next;
-            doubleCur = doubleCur.next;
-
         }
-
-        first = first.next;
+        cur = head;
+        int count = list.size();
         for (int i = 0; i < count / 2; i++) {
-            ListNode temp1 = new ListNode(first.val);
-            ListNode temp2 = new ListNode(doubleEnd.val);
-            temp1.next = temp2;
-            if (i == 0) {
-                cur1 = temp1;
-            } else {
-                cur1.next = temp1;
-            }
-            cur1 = temp2;
-            first = first.next;
-            doubleEnd = doubleEnd.pre;
+            ListNode temp2 = list.get(count - 1 - i);
+            ListNode ok = list.get(count - 2 - i);
+            ok.next = null;
+            ListNode temp = cur.next;
+            cur.next = temp2;
+            temp2.next = temp;
+            cur = cur.next.next;
         }
 
     }
@@ -63,7 +48,6 @@ public class 重排链表_143 {
     /**
      * 执行用时 : 3 ms, 在Reorder List的Java提交中击败了95.44% 的用户
      * 内存消耗 : 39.2 MB, 在Reorder List的Java提交中击败了95.21% 的用户
-     * @param head
      */
     /*public static void reorderList(ListNode head) {
         if (head == null) {
