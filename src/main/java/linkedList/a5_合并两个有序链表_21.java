@@ -8,7 +8,7 @@ package linkedList;
  * 输入：1->2->4, 1->3->4
  * 输出：1->1->2->3->4->4
  */
-public class 合并两个有序链表_21 {
+public class a5_合并两个有序链表_21 {
 
     public static class ListNode {
         int val;

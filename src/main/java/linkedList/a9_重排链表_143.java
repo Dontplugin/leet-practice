@@ -16,7 +16,7 @@ import java.util.LinkedList;
  *
  * 给定链表 1->2->3->4->5, 重新排列为 1->5->2->4->3.
  */
-public class 重排链表_143 {
+public class a9_重排链表_143 {
 
     /**
      * 执行用时 : 582 ms, 在Reorder List的Java提交中击败了7.23% 的用户

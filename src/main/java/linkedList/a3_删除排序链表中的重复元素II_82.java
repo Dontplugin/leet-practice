@@ -12,7 +12,7 @@ package linkedList;
  * 输入: 1->1->1->2->3
  * 输出: 2->3
  */
-public class 删除排序链表中的重复元素II_82 {
+public class a3_删除排序链表中的重复元素II_82 {
     public static ListNode deleteDuplicates(ListNode head) {
         ListNode ret = new ListNode(Integer.MIN_VALUE);
         ListNode ok = new ListNode(Integer.MIN_VALUE);

@@ -16,7 +16,7 @@ import java.util.Set;
  * 输入: 1->1->2->3->3
  * 输出: 1->2->3
  */
-public class 删除排序链表中的重复元素_83 {
+public class a2_删除排序链表中的重复元素_83 {
 
     /**
      * 执行用时 : 8 ms, 在Remove Duplicates from Sorted List的Java提交中击败了5.56% 的用户

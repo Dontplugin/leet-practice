@@ -14,7 +14,7 @@ package linkedList;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  */
-public class 两数相加 {
+public class a1_两数相加 {
 
     public static class ListNode {
         int val;

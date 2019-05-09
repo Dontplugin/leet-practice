@@ -16,7 +16,7 @@ package linkedList;
  *
  * 你能尝试使用一趟扫描实现吗？
  */
-public class 删除链表的倒数第N个节点 {
+public class a4_删除链表的倒数第N个节点 {
 
     public static class ListNode {
         int val;

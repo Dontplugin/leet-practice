@@ -31,7 +31,7 @@ import java.util.Stack;
  * 输入：[1,7,5,1,9,2,5,1]
  * 输出：[7,9,9,9,0,5,0,0]
  */
-public class 链表中的下一个更大节点_1019 {
+public class a10_链表中的下一个更大节点_1019 {
 
     public static void main(String[] args) {
         ListNode l2 = new ListNode(2);
@@ -149,5 +149,5 @@ public class 链表中的下一个更大节点_1019 {
         }
         return ret;
     }*/
-    
+
 }

@@ -20,7 +20,7 @@ package linkedList;
  * 向右旋转 3 步: 0->1->2->NULL
  * 向右旋转 4 步: 2->0->1->NULL
  */
-public class 旋转链表_61 {
+public class a7_旋转链表_61 {
 
     public static ListNode rotateRight(ListNode head, int k) {
         ListNode first = head;

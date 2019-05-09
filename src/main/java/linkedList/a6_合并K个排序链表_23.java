@@ -13,7 +13,7 @@ package linkedList;
  * ]
  * 输出: 1->1->2->3->4->4->5->6
  */
-public class 合并K个排序链表_23 {
+public class a6_合并K个排序链表_23 {
 
     public static class ListNode {
         int val;

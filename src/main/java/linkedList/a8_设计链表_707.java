@@ -31,7 +31,7 @@ package linkedList;
  * 操作次数将在  [1, 1000] 之内。
  * 请不要使用内置的 LinkedList 库。
  */
-public class 设计链表_707 {
+public class a8_设计链表_707 {
 
     /**
      * 执行用时 : 117 ms, 在Design Linked List的Java提交中击败了73.96% 的用户
